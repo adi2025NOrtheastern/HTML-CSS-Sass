@@ -1,0 +1,19 @@
+{
+  "name": "assignment-4-adi2025northeastern",
+  "version": "1.0.0",
+  "description": "- The goal of this assignment is to learn about CSS positioning, Grid layout, SCSS features like variables, mixins, inheritance, loops, functions, math operations, etc.\r - SCSS should be organized in multiple files based on UI features, common elements, and themes.\r - These SCSS files should be added to a main.scss file and this should be converted to a .css file using sass.\r - The navbar should be sticky/fixed.\r - JavaScript is not required. This will not add more points to this assignment.\r - Your site should look very close to the attached file.\r - You should not use the table element for formatting.\r - You should add code documentation using SCSS comments.\r - If any asset required for the page is missing then use the below links for placeholder assets.\r - Can use any image from https://pixabay.com (Links to an external site.) or any other free image site.\r - Can use text from https://www.lipsum.com/.\r - Can use icons from material design https://material.io/tools/icons/?style=baseline even if it doesn't match the UI mock.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info6150-fall2021/assignment-4-adi2025NOrtheastern.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info6150-fall2021/assignment-4-adi2025NOrtheastern/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info6150-fall2021/assignment-4-adi2025NOrtheastern#readme"
+}

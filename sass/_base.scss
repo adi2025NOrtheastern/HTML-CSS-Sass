@@ -1,0 +1,32 @@
+
+// A mixin lets you make groups of CSS declarations that you want to reuse throughout your site.
+
+
+@use "sass:math";
+
+// a mixin used for setting font-size and color
+@mixin fontSizeColor($fs, $c) {
+    font-size: $fs;
+    color: $c;
+  }
+
+// a function to divide 
+  @function divide($a, $b) {
+    @return math.div($a, $b);
+  }
+
+// to decide for heading font size
+  @mixin headingFont($size) {
+    @if $size == large {
+      font-size: 4rem;
+    }
+    @else if $size == medium{
+      font-size: 13px;
+    }
+    @else if $size == small {
+      font-size: 2rem;
+    }
+    @else {
+      font-size: 1rem;
+    }
+  }

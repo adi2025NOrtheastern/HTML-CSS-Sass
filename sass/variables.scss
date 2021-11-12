@@ -1,0 +1,13 @@
+@use 'sass:list';
+
+$background-color: rgba(193,139,74,0.5);
+$myfontfamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$btnfontfamily: Averta, 'Avenir W02', Avenir, Helvetica, Arial, sans-serif;
+
+
+//tried a list 
+@debug list.append(10px 20px, 30px); // 10px 20px 30px
+@debug list.append((blue, red), green); // blue, red, green
+@debug list.append(10px 20px, 30px 40px); // 10px 20px (30px 40px)
+@debug list.append(10px, 20px, $separator: comma); // 10px, 20px
+@debug list.append((blue, red), green, $separator: space); // blue red green

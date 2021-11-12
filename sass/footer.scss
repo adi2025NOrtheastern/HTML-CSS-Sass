@@ -1,0 +1,50 @@
+//footer scss file
+
+.footer-copyright {
+    background-color: #0b2f50;
+    /*margin-top: 10%; */
+    height: 20%;
+    padding-left: 300px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-family: $myfontfamily;
+    color: white;
+    font-size: 13px;
+
+}
+
+.footer-copyright>a {
+    font-family: $myfontfamily;
+    color: white;
+    font-size: 13px;
+}
+
+.footer-div-1 {
+    width: 30%;
+    float: left;
+    font-size: 13px;
+}
+
+.footer-useful {
+    width: 30%;
+    float: left;
+    /*margin-left: 10%;*/
+}
+
+.footer-useful p>a {
+    color: white;
+}
+
+.footer-help {
+    width: 20%;
+    margin-left: 50%;
+}
+
+.footer-help p>a {
+    color: white;
+}
+
+.footer-help p:last-of-type {
+    margin-left: 120px;
+    ;
+}

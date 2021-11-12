@@ -1,0 +1,972 @@
+/* css comments */
+@import 'base';
+@import 'variables';
+/*@import 'sass:math';*/
+
+form {
+    border-radius: 5px;
+    /* background-color: #f2f2f2;*/
+    padding: 20px;
+    display: inline-block;
+
+}
+
+
+section {
+    border-radius: 5px;
+
+}
+
+
+.main-div {
+    width: 100%;
+    float: left;
+    padding-top: 20px;
+}
+
+.menu {
+    position: sticky;
+}
+
+.menu-label {
+    // fontSizeColor is a mixin in _base.scss file  
+    @include fontSizeColor($fs: 50px, $c:dodgerblue);
+    font-family: $myfontfamily;
+    padding-left: 30px;
+    position: absolute;
+    top: 10px;
+}
+
+/* all links for removing underline and font family*/
+.css-link {
+    color: #3866a3;
+    font-family: $myfontfamily;
+}
+
+
+//‘&’ Operator
+//This ampersand & operator is often used when nesting and it’s an extremely useful feature.
+a {
+    &:link {
+        text-decoration: none;
+    }
+
+    &:visited {
+        text-decoration: none;
+    }
+
+    &:hover {
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    &:active {
+        text-decoration: none;
+        color: dodgerblue;
+    }
+}
+
+
+
+
+:target {
+    color: dodgerblue;
+}
+
+
+.notification {
+    width: 40px;
+    height: 30px;
+    border-radius: 40px;
+    padding: 10px 20px 10px 20px;
+    position: absolute;
+    top: 30px;
+    left: 1150px;
+
+}
+
+.login_btn1{
+    padding-left: 50px;
+}
+
+.heading-dark-blue {
+
+    @include fontSizeColor($fs: 40px, $c:rgb(30, 45, 78));
+    margin-bottom: 30px;  //was 0px
+}
+
+a.active {
+    color: dodgerblue;
+}
+
+.heading-steel-blue {
+
+    @include fontSizeColor($fs: 40px, $c:steelblue);
+    margin-top: 0px;
+}
+
+
+.apt-par {
+    font-family: $myfontfamily;
+    color: #acb4bc;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+
+input:invalid {
+    color: red;
+}
+
+input:focus:invalid {
+    color: red;
+}
+
+img[class="notification"] {
+    border-radius: 40px;
+}
+
+.set-padding-bottom {
+    padding-bottom: 30px !important;
+    width: 60% !important;
+}
+
+.padding-right {
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+/* menu bar search form*/
+.search-form {
+    width: 10%;
+    /*margin-right: 10% !important;*/
+    display: inline;
+    padding: 50px 30px 30px 30px !important;
+    position: relative;
+    margin-left: 250px;
+}
+
+/* select city/street apt type form */
+.search-form-text {
+    @include fontSizeColor($fs: 16px, $c:steelblue);
+    font-weight: bold;
+    background-color: white;
+}
+
+.search-form-label {
+    @include fontSizeColor($fs: 15px, $c:grey);
+    font-family: $myfontfamily;
+    font-weight: 400;
+}
+
+[textAttr="size"] {
+    width: 100px;
+
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.btn-padding-top {
+    //padding-top: 200px !important;
+}
+
+.css-form-padding {
+    padding: 20px;
+    padding-left: 30px !important;
+
+}
+
+.search-drop-down {
+    border-style: none;
+}
+
+
+
+.custom-padding {
+    width: 400px;
+}
+
+.css-height-auto {
+    height: auto;
+}
+
+.section-apt-plans {
+    text-align: center;
+    width: 90%;
+    background: rgb(247, 247, 247);
+    height: auto;
+    margin-top: 5%;
+    padding: 20px 50px 20px 20px;
+}
+
+.css-padding-new {
+    padding: 50px 20px 50px 20px;
+}
+
+.css-float-left {
+    float: left;
+    width: 25%;
+}
+
+.div-width-80 {
+    width: 80%;
+
+}
+
+.div-padding {
+    padding: 5px 5px 5px 5px;
+}
+
+div>b {
+    color: dodgerblue;
+}
+
+.css-padding {
+    /*padding-left: 20px;*/
+    padding-top: 10px;
+}
+
+.div-block {
+    display: block;
+}
+
+.img-resize {
+    width: 20px;
+    height: 15px;
+    float: right;
+}
+
+
+.img-size {
+    width: 25px;
+    height: 20px;
+    /*float: right;*/
+}
+
+
+
+/* buy sell rent links buttons*/
+.css-form-link {
+    font-family: Arial;
+    color: #FFFFFF;
+    font-size: 14px;
+    border-radius: 4px;
+    border-color: #199bfc;
+    background-color: #199bfc;
+    /*text-shadow: 1px 1px 1px #528ecc;*/
+    /*box-shadow: inset 1px 1px 2px 0px #bbdaf7;*/
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 15px;
+
+
+    /* new*/
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 10px;
+    color: #fff;
+    background-color: #00b9ff;
+    max-width: 164px;
+    font-weight: 600;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    padding: 4px 16px 2px;
+    border-radius: 2px;
+    min-height: 32px;
+    border-color: #00b9ff;
+    outline-offset: -1px;
+
+    position: relative;
+    display: block;
+    font-family: $btnfontfamily;
+    margin-bottom: 0;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 12px 24px 10px;
+    border-radius: 30px;
+    min-height: 18px;
+
+    border-color: dodgerblue;
+    background-color: dodgerblue;
+    width: 50px;
+    font-size: 20px;
+
+
+
+}
+
+.div-1-right {
+    margin-left: 30%;
+    width: 70%;
+}
+
+
+.div-1-img-right {
+    width: 70%;
+    margin-left: 10%;
+    height: 80%;
+    position: absolute;
+    top: 100px;
+    left: 250px;
+}
+
+/* button hover state
+.css-button:hover {
+	background: linear-gradient(180deg, #468CCF 5%, #63B8EE 100%);
+}*/
+
+
+.div-width {
+    width: 100%;
+}
+
+.div-1-lets-find {
+    float: left;
+    width: 40%;
+    padding: 40px;
+    border-right: 10px;
+    border-color: white;
+    border-radius: 50px;
+    border-style: solid;
+    padding-right: 0%;
+    box-shadow: 2px 3px 11px 0px #d3cfcf;
+    border-left: snow;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    overflow: hidden;
+
+    position: relative;
+    background-color: white;
+}
+
+.border-shadow {
+    box-shadow: 2px 3px 11px 0px #d3cfcf;
+    border-left: snow;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 10px;
+    margin: 20px 20px 20px 20px;
+}
+
+/*used math operator * */
+.aptTypeSection {
+    text-align: center;
+    $wid: 10 * 10%;
+    @debug "width set: #{$wid}";
+    width: $wid;
+    /* 100% */
+}
+
+.topmost-div {
+    padding-left: 0px;
+}
+
+/* main div for all radio buttons img apt type*/
+
+.apt-div {
+    align-items: center;
+    margin-left: 10%;
+    overflow: hidden;
+
+    //new changes grid 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+/*each radio buttons img apt type*/
+.apt-sub-div {
+    width: "40%";
+    border-radius: 20px;
+    float: left;
+}
+
+.apt-radio:checked {
+
+    background: rgb(245, 141, 43);
+}
+
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+
+.apt-figure {
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.apt-img {
+    width: 200px;
+    height: 150px;
+}
+
+[same="line"] {
+    display: inline;
+}
+
+.css-upper-text {
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.css-dodgeblue {
+    @include fontSizeColor($fs: 70px, $c: dodgerblue);
+    margin: 0%
+}
+
+.css-plan-link {
+    font-family: $myfontfamily;
+    color: rgb(20, 10, 10);
+    padding: 20px 50px 20px 50px;
+}
+
+[selected-link] {
+    text-decoration: underline;
+    border-bottom-color: dodgerblue;
+    color: dodgerblue;
+    text-decoration-thickness: 1px;
+
+}
+
+.css-plan-link:hover {
+    @extend [selected-link];
+}
+
+//begins with
+div[class^="css-deluxe"]>p {
+    font-size: 13px;
+}
+
+/* deluxe portion */
+.css-deluxe {
+    width: 30%;
+    height: auto;
+    /*400px;*/
+    float: left;
+    background: #186aa5;
+    /*rgb(55, 105, 146);*/
+    color: rgb(249, 249, 255);
+    padding: 20px 20px 20px 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    font-family: $myfontfamily;
+
+}
+
+.css-deluxe>h2 {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.css-deluxe>p:first-of-type {
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.deluxe-desc {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    display:inline-table;
+}
+
+.css-padding-img {
+    padding: 40px 40px 40px 40px;
+    width: 500px;
+    height: 350px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.deluxe-right-img {
+    /*margin-left: 50%; */
+    height: 80%;
+    width: 30%;
+    /*  width="100%" height="400px"*/
+}
+
+input[type=button][mainbtns]:hover {
+
+    border-color: dodgerblue;
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
+
+img[class=notification]:hover {
+    background-color: grey;
+    border-radius: 70px;
+
+    width: 30px;
+}
+
+.main-btn-padding {
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+.css-navy-blue {
+    @include fontSizeColor($fs: 60px, $c: steelblue);
+    margin: 0%
+}
+
+.css-search {
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: lightslategrey;
+
+    width: 20%;
+
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    margin-right: 0px;
+    display: inline;
+    height: 30px;
+
+    /*border-width: 10px;*/
+}
+
+.div-inline {
+    display: inline;
+}
+
+
+.no-outline:focus {
+    outline: none;
+}
+
+.search-img {
+    width: 20px;
+
+}
+
+.css-srch-btn {
+    padding: 0px 0px 0px 0px;
+}
+
+.no-border {
+    border-color: white;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+
+}
+
+/* descendant and pseduo*/
+div[special=yes]>input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: steelblue;
+    opacity: 1;
+    /* Firefox */
+}
+
+div[special=yes] {
+    padding-top: 30px;
+}
+
+select:focus,
+input:focus {
+    outline: none;
+}
+
+.search-form-section {
+    padding-left: 20px;
+    width: "100%";
+    position: relative;
+    /*padding-top: 200px;*/
+    /*background-color: white;*/
+    margin-top: 250px;
+    content-visibility: visible;
+}
+
+.h3-class {
+    font-family: $myfontfamily;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.div-padding-top {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+/* for featured images div*/
+
+.div-img-1 {
+    width: 25%; //400px;
+    float: left;
+    border-radius: 20px;
+    border-radius: 20px;
+    // height: 700px;
+
+}
+
+[alt="Rent"],
+[alt="Sell"] {
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-bottom: 1px;
+    /*padding: 20px;*/
+    width: 340px;
+    height: 200px;
+    overflow: hidden;
+}
+
+figure[class="div-img-figure"]>img {
+    /*padding: 30px 30px 30px 30px;*/
+    border-radius: 30px !important;
+}
+
+.div-img-figure {
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 10px;
+    padding: 10px 10px 10px 10px;
+    /*margin: 30px 30px 30px 30px;*/
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+/* figure label1 used first-of-type*/
+figure[class="div-img-figure"]>label:first-of-type,
+.fig-label-1 {
+    background-color: rgb(129, 134, 139);
+    color: white;
+    border-right: 20px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    font-family: $myfontfamily;
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+figcaption {
+    align-items: center;
+    align-content: center;
+    text-align: left;
+    font-family: $myfontfamily;
+    color: rgb(129, 134, 139);
+
+}
+
+//nesting 
+figure {
+    p:first-of-type>b:first-of-type {
+        color: dodgerblue;
+        font-family: $myfontfamily;
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+//for loop
+$pbval: 3;
+
+@for $i from 2 through $pbval {
+    @if $i==2 {
+        .pb#{$i} {
+            font-weight: bold;
+            @include fontSizeColor($fs: 20px, $c: black);
+        }
+    }
+
+    @else if $i==3 {
+        .pb#{$i} {
+            color: rgb(129, 134, 139);
+            font-family: $myfontfamily;
+            font-size: 10px;
+        }
+
+    }
+}
+
+/* for rent*/
+.fig-label-2 {
+    background-color: yellowgreen;
+    color: white;
+    $bordervar: divide(40, 2) * 1px;
+    /*20px; divide function*/
+    @debug $bordervar;
+    border-right: $bordervar;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+
+    border: 20px 20px 20px 20px;
+    font-family: $myfontfamily;
+    font-weight: bold;
+    /*margin-bottom: 40px;*/
+    float: right;
+    position: absolute;
+
+    top: 20px;
+    left: 230px;
+
+}
+
+.img-resize-div {
+    width: 20px;
+    height: 25px;
+}
+
+.fig-img {
+    width: 300px;
+}
+
+.color-grey {
+    background-color: rgb(245, 245, 245);
+    overflow: hidden;
+    border-radius: 10px;
+    height: 30% !important;
+    width: 60% !Important;
+}
+
+.padding-a1{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+
+.padding-a2{   
+    padding-top: 30px;
+}
+
+
+.padding-a3{
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+//if -else construct in _base.scss
+div>h4 {
+    //font-size: 13px;
+    @include headingFont(medium);
+
+}
+
+.feature-section {
+    text-align: left;
+    width: 100%;
+    padding: 50px;
+}
+
+.feature-1-div {
+    text-align: center;
+    margin-left: -100px;
+}
+
+.img-slider {
+    width: 90%;
+    height: 50px;
+}
+
+
+/*buy apartment article*/
+.buy-div {
+    width: 30%;
+    height: 400px;
+    float: left;
+    padding-left: 40px;
+    padding-top: 100px;
+    font-size: 30px;
+    color: rgb(35, 58, 77);
+
+}
+
+.css-height {
+    height: 400px;
+}
+
+.colordodgerblue {
+    color: dodgerblue;
+}
+
+input[value^="See All"],
+.div-width-30 {
+    width: "10%";
+    height: auto;
+}
+
+.width-size {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 20px !important;
+}
+
+.css-union-2-img {
+    /*margin-left: 40%;*/
+    width: 40%;
+    height: 20%;
+    /*%200px%*/
+    /*adding-top: 30px;*/
+    height: auto;
+    position: relative;
+}
+
+.css-union-2-img>img {
+    width: 20%;
+    height: 20%;
+}
+
+.size-it {
+    /*margin-left: 40%;*/
+    height: fit-content;
+    /*float:left;*/
+    padding-top: 20%;
+
+}
+
+.article-div-height {
+    height: auto;
+    overflow: hidden;
+}
+
+.css-last-img {
+    margin-left: 20%;
+    width: 50%;
+    height: 100px;
+    margin-top: 0px;
+    height: auto;
+
+    position: absolute;
+    top: 30px;
+    left: 1px;
+}
+
+.marginleft{
+    margin-left: 30px;
+}
+
+.img-pddng {
+    padding-top: 60px;
+    ;
+}
+
+.css-last-img>img {
+    width: 800px;
+    // 800 8 600 right 
+    height: 600px;
+}
+
+//nesting
+.css-video-1 {
+    margin-left: 10%;
+    //height: 100px;
+    width: 80%;
+    height: auto;
+
+    >img {
+        width: 30%;
+        height: 50%;
+    }
+
+}
+
+//.css-video-1>img {     width: 30%;    height: 50%;}
+
+.css-play-img {
+    margin-right: 20%;
+    margin-left: 40%;
+    position: relative;
+}
+
+
+.actual-video {
+    width: 10%;
+    margin-left: 40%;
+    position: relative;
+    top: -20px;
+    border-radius: 60px;
+}
+
+.relative-position {
+    position: relative;
+}
+
+/*footer*/
+
+.footer-div {
+    width: 80%;
+    background-color: #14395b;
+    color: white;
+    height: 250px;
+    padding-left: 300px;
+    padding-top: 50px;
+    font-family: $myfontfamily;
+    font-size: 13px;
+}
+
+.padding-top {
+    padding-top: 20px; //new
+    padding-bottom: 10px;
+    ;
+}
+
+.padding-top-new {
+    padding-top: 10px; //new
+    padding-bottom: 10px;
+    padding-left: 20%;
+}
+
+

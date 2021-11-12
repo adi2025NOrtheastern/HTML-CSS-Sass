@@ -1,0 +1,158 @@
+// anything reusable such as buttons, navbars, cards etc. 
+
+
+.continue-btn {
+    margin-left: 35%;
+}
+
+
+/*continue and see aprtment button*/
+.btn-continue {
+
+    font-family: Arial;
+    color: #FFFFFF;
+    font-size: 14px;
+    border-radius: 4px;
+    border-color: #186aa5;
+    /* #199bfc;*/
+    background-color: #186aa5;
+    /*text-shadow: 1px 1px 1px #528ecc;*/
+    /*box-shadow: inset 1px 1px 2px 0px #bbdaf7;*/
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    /*padding: 7px 15px;*/
+
+
+    /* new*/
+
+    color: #fff;
+    background-color: #00b9ff;
+    /* max-width: 164px;*/
+    font-weight: 600;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    border-radius: 2px;
+    min-height: 32px;
+    border-color: #00b9ff;
+    outline-offset: -1px;
+
+    position: relative;
+    display: block;
+    font-family: $btnfontfamily;
+    margin-bottom: 0;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 12px 24px 10px;
+    border-radius: 10px;
+    min-height: 48px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border-color: rgb(55, 105, 146);
+    background-color: rgb(55, 105, 146);
+    ;
+    /*width : 150px;*/
+    padding-left: 156px;
+    padding-right: 156px;
+    margin: 10px 10px 10px 10px;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: $myfontfamily;
+    font-weight: 400;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+
+.btn-simple {
+    font-family: $btnfontfamily;
+    @include fontSizeColor($fs: 20px, $c: rgb(44, 43, 43));
+    text-decoration: none;
+    /*color: dodgerblue;*/
+    font-weight: 700;
+    background-color: white;
+    border-style: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
+
+
+.search-btn {
+    border-color: white;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+
+}
+
+/* login and search button*/
+
+.css-button {
+    font-family: Arial;
+    @include fontSizeColor($fs: 14px, $c:#FFFFFF);
+    border-radius: 4px;
+    border-color: #199bfc;
+    background-color: #199bfc;
+    /*text-shadow: 1px 1px 1px #528ecc;*/
+    /*box-shadow: inset 1px 1px 2px 0px #bbdaf7;*/
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 15px;
+
+
+    /* new*/
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 10px;
+    color: #fff;
+    background-color: #00b9ff;
+    max-width: 164px;
+    font-weight: 600;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    padding: 4px 16px 2px;
+    border-radius: 2px;
+    min-height: 32px;
+    border-color: #00b9ff;
+    outline-offset: -1px;
+
+    position: relative;
+    display: block;
+    font-family: $btnfontfamily;
+    margin-bottom: 0;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 12px 24px 10px;
+    border-radius: 10px;
+    min-height: 48px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    border-color: dodgerblue;
+    background-color: dodgerblue;
+    width: 150px;
+
+}
