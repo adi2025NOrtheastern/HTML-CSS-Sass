@@ -56,5 +56,4 @@ Download the code or clone using the link. Open index.html file.
 
 ## Student Developer:
 > Name: Aditi Jain\
-> NUID : 001038953 \
 > Email id : jain.adit@northeastern.edu
